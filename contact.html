@@ -4,53 +4,164 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
         crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Raleway:400,700|Playfair+Display:400" rel="stylesheet">
     <title>Delicious Contact</title>
 </head>
-    <body>
-        <header>
-            <nav>
+<body>
+    <header class="headerContact"> <!-- Header Begins-->
+        <nav class="clearfix">
+            <h1>Delicious</h1>
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a href="recipes.html">Recipes</a>
+                </li>
+                <li>
+                    <a href="nutrition.html">Nutrition</a>
+                </li>
+                <li>
+                    <a href="blog.html">Blog</a>
+                </li>
+                <li>
+                    <a href="shop.html">Shop</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+                <li>
+                    <a href="cart.html">
+                        <i class="fas fa-shopping-bag"></i>
+                        <span class="visuallyhidden">Cart</span>
+                    </a>
+                    <div class="numberTwo"> <!-- 2 with a circle -->
+                        <p>2</p> 
+                    </div>
+                </li>
+                <li>
+                    <a href="cart.html">
+                        <i class="fas fa-search"></i>
+                        <span class="visuallyhidden">Search Bar</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header> <!-- Header Ends -->
+    <main class="clearfix">
+        <section class="mainForm clearfix"> <!-- Contact Form -->
+            <div class="formWrapper">
+                <h3>Drop Us A Line</h3> <!-- FORM BEGINS-->
+                <form class="formInput" method="POST" name="contactForm" id="contactForm">
+                    <input type="text" class="myInput" name="yourName" placeholder="Your Name"><input type="email" name="emailAddress" placeholder="Your Email">
+                    <input type="text" class="myInput" name="yourSubject" placeholder="Subject">
+                    <textarea name="specialInstructions" cols="30" rows="10" placeholder="Message"></textarea>
+                    <input type="submit" name="submit" placeholder="Send Message" value="Send Message  &#xf30b;">
+                </form>
+            </div>
+        </section>
+        <aside> <!-- Beginning of Aside -->
+            <div class="asideWrapper clearfix">
+                <div class="contactDetails">
+                    <h3>Contact Details</h3>
+                    <p>Beetroot water spinach okra water chestnut ricebean pea catsear courgette summer purslane. Water spinach arugula pea tatsoi aubergine spring onion bush tomato kale.</p>
+                </div>
+                <div class="hours">
+                    <h3>Working Hours</h3>
+                    <p><span>Mon - Fri :</span> 08:00am -  05:30pm</p>
+                    <p>Not working on Saturday or Sunday !</p>
+                </div>    
+                <div class="contactInfo">
+                    <h3>Contact Info</h3>
+                    <p>A delicious restaurant
+                        <span>Toronto, Ontario</span>
+                    </p>
+                    <p><a href="mailto:yum@food.com">yum@food.com</a></p>
+                    <p><a href="tel:+1-234-567-8910">+1 234 567 8910</a></p>
+                </div>
+            </div>
+        </aside>
+        <section class="contactImage"></section> <!-- BIG IMAGE -->
+    </main>
+    <footer> <!-- Footer -->
+        <div class="homeWrapper clearfix">
+            <div class="leftBox"> <!-- Left Side -->
                 <h1>Delicious</h1>
+                <p>Soko radicchio bunya nuts gram dulse silver beet parsnip napa cabbage lotus root sea lettuce brussels sprout
+                    cabbage.
+                </p>
+                <p>A delicious restaurant
+                    <span> Toronto, Ontario</span>
+                </p>
+                <p><a href="mailto:yum@food.com">yum@food.com</a></p>
+                <p><a href="tel:+1-234-567-8910">+1 234 567 8910</a></p>
+            </div>
+            <div class="middleBox"> <!-- Middle-->
+                <h3>Recent Posts</h3>
                 <ul>
                     <li>
-                        <a href="about.html"></a>About</li>
-                    <li>
-                        <a href="home.html"></a>Home</li>
-                    <li>
-                        <a href="recipes.html"></a>Recipes</li>
-                    <li>
-                        <a href="nutrition.html"></a>Nutrition</li>
-                    <li>
-                        <a href="blog.html"></a>Blog</li>
-                    <li>
-                        <a href="shop.html"></a>Shop</li>
-                    <li>
-                        <a href="contact.html"></a>Contact</li>
-                    <li>
-                        <i class="fas fa-shopping-bag"></i>
+                        <p>Beetroot water spinach okra water</p>
                     </li>
                     <li>
-                        <i class="fas fa-search"></i>
+                        <p>Chestnut ricebean pea catsear courgette</p>
+                    </li>
+                    <li>
+                        <p>Summer purslane spinach arugula pea</p>
+                    </li>
+                    <li>
+                        <p>Tatsoi aubergine spring onion bush</p>
+                    </li>
+                    <li>
+                        <p>Tomato kale radicchio turnip chicory</p>
+                    </li>
+                    <li>
+                        <p>Salsify pea sprouts fava bean</p>
                     </li>
                 </ul>
-            </nav>
-        </header>
-        <main>
-            <section>
-                <div class="contactForm">
-                    <h2>Drop Us A Line</h2>
-                    <div class="formInput">
-                        <input type="text" class="myInput" name="yourName" placeholder="Your Name">
-                        <input type="email" name="emailAddress" placeholder="Your Email">
-                        <input type="text" class="myInput" name="yourSubject" placeholder="Subject">
-                        <textarea name="specialInstructions" cols="30" rows="10" placeholder="Message"></textarea>
-                        
-                    </div>
-                </div>
-            </section>
-        </main>
-    </body>
+            </div>
+            <div class="rightBox"> <!-- Right Side-->
+                <h3>Subscribe Box</h3>
+                <p>Get all of our newest recipes immediately in your inbox!</p>
+                <form action="sendEmail.php", method="POST", name="emailForm">
+                    <input type="email" name="emailAddress" placeholder="Enter your email"><input type="submit" name="submit" value="&#xf30b;">
+                </form>
+                <ul> <!-- Links -->
+                    <li>
+                        <a href="www.facebook.com">
+                            <i class="fab fa-facebook-f"></i>
+                            <span class="visuallyhidden">Facebook</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="www.twitter.com">
+                            <i class="fab fa-twitter"></i>
+                            <span class="visuallyhidden">Twitter</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="www.instagram.com">
+                            <i class="fab fa-instagram"></i>
+                            <span class="visuallyhidden">Instagram</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright"> <!-- Copyright -->
+            <div class="homeWrapper">
+                <p>Copyrights © 2015 by
+                    <span>polar</span><span>.</span> All Rights Reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
 </html>
 
 
