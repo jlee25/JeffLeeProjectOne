@@ -803,6 +803,10 @@ aside {
 .contactInfo a {
     font-family: 'Lora', serif;
 }
+
+.contactInfo a:hover {
+    color: #64A604; 
+}
 .contactImage {
     height: 70vh;
     background: url(../assets/contact-2.jpeg) center no-repeat;
